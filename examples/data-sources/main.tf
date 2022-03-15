@@ -85,3 +85,12 @@ data "aquasec_image_assurance_policy" "default" {
 output "images" {
   value = data.aquasec_image_assurance_policy.default
 }
+
+
+data "aquasec_application_scope" "default" {
+    name = "Global"
+}
+
+output "scopes" {
+  value = data.aquasec_application_scope.default
+}
